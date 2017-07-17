@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="css/main.css">
+   <title>Kantor</title>
+</head>
+
+<body>
+
+   <div class="containerForHeader">
+      <header>
+         <i class="demo-icon icon-money"></i>
+         <h1>Kantor</h1>
+      </header>
+   </div>
+
+   <div class="containerForSections">
+      <section>
+         <h2 class="calcHeader">
+            Kalkulator walut
+            <i class="demo-icon icon-down-open"></i>
+         </h2>
+         <section class="calcSetion">
+            <div>
+               <div class="calc">
+                  <output class="warning"></output>
+                  <div>
+                     <p>Mam</p>
+                     <input></input>
+                     <select class="give">
+                        <option value="thb">thb</option>
+                        <option value="usd">usd</option>
+                        <option value="aud">aud</option>
+                        <option value="hkd">hkd</option>
+                        <option value="cad">cad</option>
+                        <option value="nzd">nzd</option>
+                        <option value="sgd">sgd</option>
+                        <option value="eur">eur</option>
+                        <option value="huf">huf</option>
+                        <option value="chf">chf</option>
+                        <option value="gbp">gbp</option>
+                        <option value="uah">uah</option>
+                        <option value="jpy">jpy</option>
+                        <option value="czk">czk</option>
+                        <option value="dkk">dkk</option>
+                        <option value="isk">isk</option>
+                        <option value="nok">nok</option>
+                        <option value="sek">sek</option>
+                        <option value="hrk">hrk</option>
+                        <option value="ron">ron</option>
+                        <option value="bgn">bgn</option>
+                        <option value="try">try</option>
+                        <option value="ils">ils</option>
+                        <option value="clp">clp</option>
+                        <option value="php">php</option>
+                        <option value="mxn">mxn</option>
+                        <option value="zar">zar</option>
+                        <option value="brl">brl</option>
+                        <option value="myr">myr</option>
+                        <option value="rub">rub</option>
+                        <option value="idr">idr</option>
+                        <option value="inr">inr</option>
+                        <option value="krw">krw</option>
+                        <option value="cny">cny</option>
+                        <option value="xdr">xdr</option>
+                     </select>
+                  </div>
+                  <div>
+                     <p>Otrzymam</p>
+                     <output class="sum"></output>
+                     <select class="get">
+                        <option value="thb">thb</option>
+                        <option value="usd">usd</option>
+                        <option value="aud">aud</option>
+                        <option value="hkd">hkd</option>
+                        <option value="cad">cad</option>
+                        <option value="nzd">nzd</option>
+                        <option value="sgd">sgd</option>
+                        <option value="eur">eur</option>
+                        <option value="huf">huf</option>
+                        <option value="chf">chf</option>
+                        <option value="gbp">gbp</option>
+                        <option value="uah">uah</option>
+                        <option value="jpy">jpy</option>
+                        <option value="czk">czk</option>
+                        <option value="dkk">dkk</option>
+                        <option value="isk">isk</option>
+                        <option value="nok">nok</option>
+                        <option value="sek">sek</option>
+                        <option value="hrk">hrk</option>
+                        <option value="ron">ron</option>
+                        <option value="bgn">bgn</option>
+                        <option value="try">try</option>
+                        <option value="ils">ils</option>
+                        <option value="clp">clp</option>
+                        <option value="php">php</option>
+                        <option value="mxn">mxn</option>
+                        <option value="zar">zar</option>
+                        <option value="brl">brl</option>
+                        <option value="myr">myr</option>
+                        <option value="rub">rub</option>
+                        <option value="idr">idr</option>
+                        <option value="inr">inr</option>
+                        <option value="krw">krw</option>
+                        <option value="cny">cny</option>
+                        <option value="xdr">xdr</option>
+                     </select>
+                     <button type="button">Przelicz</button>
+                  </div>
+               </div>
+               <div>
+                  <img style="-webkit-user-select: none;background-position: 0px 0px, 10px 10px;background-size: 20px 20px;background-image:linear-gradient(45deg, #eee 25%, transparent 25%, transparent 75%, #eee 75%, #eee 100%),linear-gradient(45deg, #eee 25%, white 25%, white 75%, #eee 75%, #eee 100%);" src="file:///home/cedro/Pulpit/Projekt/Przelicnik_walut5/200.webp">
+               </div>
+            </div>
+         </section>
+         <section class="tab">
+            <h2>Średnie kursy walut - aktualne notowanie NBP</h2>
+            <table>
+               <thead>
+                  <tr>
+                     <th class="col1">Kraj</th>
+                     <th class="col2">Waluta</th>
+                     <th class="col3">Symbol</th>
+                     <th class="col4">Średni kurs</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td class="col1">Tajlandia</td>
+                     <td class="col2">bat</td>
+                     <td class="col3"></td>
+                     <td class="col4 thb"></td>
+                  </tr>
+                  <tr>
+                     <td class="col1">Stany Zjednoczone Ameryki</td>
+                     <td class="col2">dolar amerykański</td>
+                     <td class="col3"></td>
+                     <td class="col4 usd"></td>
+                  </tr>
+                  <tr>
+                     <td class="col1">Australia</td>
+                     <td class="col2">dolar australijski</td>
+                     <td class="col3"></td>
+                     <td class="col4 aud"></td>
+                  </tr>
+                  <tr>
+                     <td class="col1">Hongkong</td>
+                     <td class="col2">dolar Hongkongu</td>
+                     <td class="col3"></td>
+                     <td class="col4 hkd"></td>
+                  </tr>
+                  <tr>
+                     <td class="col1">Kanada</td>
+                     <td class="col2">dolar kanadyjski</td>
+                     <td class="col3"></td>
+                     <td class="col4 cad"></td>
+                  </tr>
+                  <tr>
+                     <td class="col1">Nowa Zelandia</td>
+                     <td class="col2">dolar nowozelandzki</td>
+                     <td class="col3"></td>
+                     <td class="col4 nzd"></td>
+                  </tr>
+                  <tr>
+                     <td class="col1">Singapur</td>
+                     <td class="col2">dolar singapurski</td>
+                     <td class="col3"></td>
+                     <td class="col4 sgd"></td>
+                  </tr>
+                  <tr>
+                     <td class="col1">Unia Europejska</td>
+                     <td class="col2">euro</td>
+                     <td class="col3"></td>
+                     <td class="col4 eur"></td>
+                  </tr>
+                  <tr>
+                     <td class="col1">Węgry</td>
+                     <td class="col2">forint</td>
+                     <td class="col3"></td>
+                     <td class="col4 huf"></td>
+                  </tr>
+                  <tr>
+                     <td class="col1">Szwajcaria</td>
+                     <td class="col2">frank szwajcarski</td>
+                     <td class="col3"></td>
+                     <td class="col4 chf"></td>
+                  </tr>
+                  <tr>
+                     <td class="col1">Wielka Brytania</td>
+                     <td class="col2">funt szterling</td>
+                     <td class="col3"></td>
+                     <td class="col4 gbp"></td>
+                  </tr>
+                  <tr>
+                     <td class="col1">Ukraina</td>
+                     <td class="col2">hrywna</td>
+                     <td class="col3"></td>
+                     <td class="col4 uah"></td>
+                  </tr>
+                  <tr>
+                     <td class="col1">Japonia</td>
+                     <td class="col2">jen</td>
+                     <td class="col3"></td>
+                     <td class="col4 jpy"></td>
+                  </tr>
+                  <tr>
+                     <td class="col1">Czechy</td>
+                     <td class="col2">korona czeska</td>
+                     <td class="col3"></td>
+                     <td class="col4 czk"></td>
+                  </tr>
+                  <tr>
+                     <td class="col1">Dania</td>
+                     <td class="col2">korona duńska</td>
+                     <td class="col3"></td>
+                     <td class="col4 dkk"></td>
+                  </tr>
+                  <tr>
+                     <td class="col1">Islandia</td>
+                     <td class="col2">korona islandzka</td>
+                     <td class="col3"></td>
+                     <td class="col4 isk"></td>
+                  </tr>
+                  <tr>
+                     <td class="col1">Norwegia</td>
+                     <td class="col2">korona norweska</td>
+                     <td class="col3"></td>
+                     <td class="col4 nok"></td>
+                  </tr>
+                  <tr>
+                     <td class="col1">Szwecja</td>
+                     <td class="col2">korona szwedzka</td>
+                     <td class="col3"></td>
+                     <td class="col4 sek"></td>
+                  </tr>
+                  <tr>
+                     <td class="col1">Chorwacja</td>
+                     <td class="col2">kuna</td>
+                     <td class="col3"></td>
+                     <td class="col4 hrk"></td>
+                  </tr>
+                  <tr>
+                     <td class="col1">Rumunia</td>
+                     <td class="col2">lej rumuński</td>
+                     <td class="col3"></td>
+                     <td class="col4 ron"></td>
+                  </tr>
+                  <tr>
+                     <td class="col1">Bułgaria</td>
+                     <td class="col2">lew</td>
+                     <td class="col3"></td>
+                     <td class="col4 bgn"></td>
+                  </tr>
+                  <tr>
+                     <td class="col1">Turcja</td>
+                     <td class="col2">lira turecka</td>
+                     <td class="col3"></td>
+                     <td class="col4 try"></td>
+                  </tr>
+                  <tr>
+                     <td class="col1">Izrael</td>
+                     <td class="col2">nowy izraelski szekel</td>
+                     <td class="col3"></td>
+                     <td class="col4 ils"></td>
+                  </tr>
+                  <tr>
+                     <td class="col1">Chile</td>
+                     <td class="col2">peso chilijskie</td>
+                     <td class="col3"></td>
+                     <td class="col4 clp"></td>
+                  </tr>
+                  <tr>
+                     <td class="col1">Filipiny</td>
+                     <td class="col2">peso filipińskie</td>
+                     <td class="col3"></td>
+                     <td class="col4 php"></td>
+                  </tr>
+                  <tr>
+                     <td class="col1">Meksyk</td>
+                     <td class="col2">peso meksykańskie</td>
+                     <td class="col3"></td>
+                     <td class="col4 mxn"></td>
+                  </tr>
+                  <tr>
+                     <td class="col1">Republika Południowej Afryki</td>
+                     <td class="col2">rand</td>
+                     <td class="col3"></td>
+                     <td class="col4 zar"></td>
+                  </tr>
+                  <tr>
+                     <td class="col1">Brazylia</td>
+                     <td class="col2">real</td>
+                     <td class="col3"></td>
+                     <td class="col4 brl"></td>
+                  </tr>
+                  <tr>
+                     <td class="col1">Malezja</td>
+                     <td class="col2">ringgit</td>
+                     <td class="col3"></td>
+                     <td class="col4 myr"></td>
+                  </tr>
+                  <tr>
+                     <td class="col1">Rosja</td>
+                     <td class="col2">rubel rosyjski</td>
+                     <td class="col3"></td>
+                     <td class="col4 rub"></td>
+                  </tr>
+                  <tr>
+                     <td class="col1">Indonezja</td>
+                     <td class="col2">rupia indonezyjska</td>
+                     <td class="col3"></td>
+                     <td class="col4 idr"></td>
+                  </tr>
+                  <tr>
+                     <td class="col1">Indie</td>
+                     <td class="col2">rupia indonezyjska</td>
+                     <td class="col3"></td>
+                     <td class="col4 inr"></td>
+                  </tr>
+                  <tr>
+                     <td class="col1">Korea Południowa</td>
+                     <td class="col2">won południowokoreański</td>
+                     <td class="col3"></td>
+                     <td class="col4 krw"></td>
+                  </tr>
+                  <tr>
+                     <td class="col1">Chiny</td>
+                     <td class="col2">yuan renminbi</td>
+                     <td class="col3"></td>
+                     <td class="col4 cny"></td>
+                  </tr>
+                  <tr>
+                     <td class="col1">Międzynarodowa jednostka walutowa</td>
+                     <td class="col2">SDR (MFW)</td>
+                     <td class="col3"></td>
+                     <td class="col4 xdr"></td>
+                  </tr>
+               </tbody>
+            </table>
+         </section>
+      </section>
+   </div>
+   <script src="js/jquery.js"></script>
+   <script type="text/javascript" src="js/script.js"></script>
+   <footer></footer>
+</body>
+
+</html>
