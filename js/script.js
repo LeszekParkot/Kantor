@@ -1,7 +1,7 @@
 $(() => {
-   // var urlApi = "http://api.nbp.pl/api/exchangerates/tables/a/today/";
+   var urlApi1 = "http://api.nbp.pl/api/exchangerates/tables/a/today/";
 
-   var urlApi = "http://api.nbp.pl/api/exchangerates/tables/a/";
+   var urlApi2 = "http://api.nbp.pl/api/exchangerates/tables/a/";
 
    var cashSymbol = document.querySelectorAll("tbody .col3");
    var cashValue = document.querySelectorAll("tbody .col4");
@@ -15,12 +15,12 @@ $(() => {
    var cashOutput = document.querySelector(".sum");
    var calcHeader = document.querySelector(".calcHeader");
    var calcSetion = document.querySelector(".calcSetion");
-   // var arrowIcon = document.querySelector(".calcHeader i");
 
 
    $.ajax({
-      url: urlApi
+      url: urlApi1
    }).done(function(response) {
+
       console.log(response);
 
       for (var i = 0; i < cashSymbol.length; i++) {
@@ -28,8 +28,20 @@ $(() => {
          cashValue[i].innerText = response[0].rates[i].mid;
       }
 
-   }).fail(function(error) {
-      console.log("błąd połączenia");
+   }).fail(function() {
+
+      $.ajax({
+         url: urlApi2
+      }).done(function(response) {
+
+         for (var i = 0; i < cashSymbol.length; i++) {
+            cashSymbol[i].innerText = response[0].rates[i].code;
+            cashValue[i].innerText = response[0].rates[i].mid;
+         }
+
+      }).fail(function(error) {
+         console.log("błąd połączenia");
+      })
    })
 
 
@@ -77,73 +89,5 @@ $(() => {
       }else {
          warningOutput.innerText = "Wpisz sumę poprawne."
       }
-
-      // console.log(giveValueAsNum);
-      // console.log(getValueAsNum);
-      // console.log(cashInputValue);
-      //
-      // console.log(cashInputValue);
-      // console.log(cashOutput.innerText);
-
-
-
    })
-
-
-
-
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// $('.give').change(function(event) {
-//    if ($(this).val() === 'usd') {
-//      console.log("elo");
-//      console.log(event.target);
-//    }
-// })
-
-
-
-// give.addEventListener("change", function(event){
-//    event.preventDefault();
-//
-//    for (var i = 0; i < give.length; i++) {
-//       if (give[i].selected) {
-//          // console.log(give[i]);
-//          var x = give[i].getAttribute("value");
-//          console.log(x);
-//
-//          var y = document.querySelector("."+x).innerText;
-//          console.log(y);
-//
-//       }
-//    }
-// })
