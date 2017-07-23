@@ -1,2 +1,1 @@
-Aplikacja korzysta z Api NBP udostępniającego aktualne kursy 35-ciu walut.
-Pod przyciskiem Kalkulator walut znajduje się kalkulator przeliczający dowolną ilość posiadanych środków na wybraną walutę.
+The application uses the NBP Api providing current exchange rates of 35 currencies. It has a calculator to convert your currency into the selected currency.
