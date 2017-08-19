@@ -1,7 +1,7 @@
 $(() => {
-   var urlApi1 = "https://api.nbp.pl/api/exchangerates/tables/a/today/";
+   var urlApi1 = "http://api.nbp.pl/api/exchangerates/tables/a/today/";
 
-   var urlApi2 = "https://api.nbp.pl/api/exchangerates/tables/a/";
+   var urlApi2 = "http://api.nbp.pl/api/exchangerates/tables/a/";
 
    var cashSymbol = document.querySelectorAll("tbody .col3");
    var cashValue = document.querySelectorAll("tbody .col4");
@@ -34,7 +34,7 @@ $(() => {
          url: urlApi2
       }).done(function(response) {
 
-         for (var i = 0; i < cashSymbol.length; i++) {
+         for (var i = 0; i < cashSymbol.length - 1; i++) {
             cashSymbol[i].innerText = response[0].rates[i].code;
             cashValue[i].innerText = response[0].rates[i].mid;
          }
@@ -43,6 +43,7 @@ $(() => {
          console.log("błąd połączenia");
       })
    })
+
 
    calcHeader.addEventListener("click", function(event){
       event.preventDefault();
