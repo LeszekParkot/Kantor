@@ -1,7 +1,7 @@
 $(() => {
-   var urlApi1 = "http://api.nbp.pl/api/exchangerates/tables/a/today/";
+   var urlApi1 = "https://api.nbp.pl/api/exchangerates/tables/a/today/";
 
-   var urlApi2 = "http://api.nbp.pl/api/exchangerates/tables/a/";
+   var urlApi2 = "https://api.nbp.pl/api/exchangerates/tables/a/";
 
    var cashSymbol = document.querySelectorAll("tbody .col3");
    var cashValue = document.querySelectorAll("tbody .col4");
